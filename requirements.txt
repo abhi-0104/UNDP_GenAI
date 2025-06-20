@@ -1,0 +1,17 @@
+-e .
+requests
+beautifulsoup4
+pandas
+pdfplumber
+nltk
+spacy
+wordcloud
+langchain
+faiss-cpu
+chromadb
+sentence-transformers
+openai
+tiktoken
+textblob
+python-dotenv
+pycountry
