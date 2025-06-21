@@ -1,6 +1,0 @@
-README.md
-setup.py
-src/UNDP_GenAI.egg-info/PKG-INFO
-src/UNDP_GenAI.egg-info/SOURCES.txt
-src/UNDP_GenAI.egg-info/dependency_links.txt
-src/UNDP_GenAI.egg-info/top_level.txt
