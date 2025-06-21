@@ -15,3 +15,5 @@ tiktoken
 textblob
 python-dotenv
 pycountry
+langchain-community
+langchain-groq
