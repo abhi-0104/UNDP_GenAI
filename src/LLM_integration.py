@@ -39,4 +39,4 @@ qa_chain = RetrievalQA.from_chain_type(
     chain_type_kwargs={"prompt": custom_prompt}
 )
 
-print("✅ Groq LLaMA chain is ready to receive queries.")
+print("Groq LLaMA chain is ready to receive queries.")

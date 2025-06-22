@@ -13,18 +13,18 @@ def extract_cleaned_text(pdf_file):
 
     with pdfplumber.open(pdf_file) as pdf:
         for page in pdf.pages:
-            # Get words with font information
+           
             words = page.extract_words(extra_attrs=["size", "fontname"])
             if not words:
                 continue
 
-            # Get most common font size (assumed to be main text)
+            
             font_sizes = [round(word['size'], 1) for word in words]
             if not font_sizes:
                 continue
             common_size = Counter(font_sizes).most_common(1)[0][0]
 
-            # Filter out footnote-style text (small font or low on page)
+           
             filtered_words = [
                 word for word in words
                 if round(word['size'], 1) >= common_size and word['top'] < page.height * 0.85
@@ -36,7 +36,6 @@ def extract_cleaned_text(pdf_file):
 
     return full_text.strip()
 
-# Process PDF links
 for idx, url in enumerate(pdf_links, start=1):
     try:
         print(f"Processing PDF {idx}: {url}")
